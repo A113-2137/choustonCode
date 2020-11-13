@@ -47,10 +47,7 @@ public class chouston2 extends LinearOpMode {
     public Servo rightClaw = null;
     public Servo relicClaw = null;
     public Servo jewelArm = null;
-    //DigitalChannel liftLower;  // Hardware Device Object
 
-
-    //    public Servo    frontClaw   = null;
     static double LEFT_CLAW_OPEN = .6; //Creates positions for the servos \/
     static double LEFT_CLAW_PARK = 1;
     static double RIGHT_CLAW_OPEN = .6;
@@ -59,14 +56,12 @@ public class chouston2 extends LinearOpMode {
     static double RIGHT_CLAW_PARK = 0;
     static double JEWEL_ARM_UP = .3;
     static double JEWEL_ARM_DOWN = .7;
-   // static double FULL = 1;
 
     static double RELIC_CLAW_CLOSE = .75;
     static double RELIC_CLAW_OPEN = .5;
 
 
-    // static double CLAW_MID = 0.2;
-   // boolean oneShot = false;
+
    double dblLeftX = 0; //Only for strafing. if not srafing, use tank drive \/
     double dblLeftY = 0;
     double dblRightX = 0;
@@ -78,14 +73,13 @@ public class chouston2 extends LinearOpMode {
     double dblLeftMotor2Power;
     double dblRightMotor1Power;
     double dblRightMotor2Power;
+    
     boolean oneShotb = false;
-    //    boolean         oneShotc     = false;
     boolean oneShotd = false;
     boolean oneShot = false;
     boolean oneShotY = false;
     boolean         oneShotx     = false;
-//    boolean         oneShotd3     = false;
-//    boolean         oneShotd4     = false;
+
 
     @Override
     public void runOpMode() throws InterruptedException {
@@ -121,10 +115,7 @@ public class chouston2 extends LinearOpMode {
         rightClaw.setPosition(RIGHT_CLAW_PARK);
         relicClaw.setPosition(RELIC_CLAW_CLOSE);
         jewelArm.setPosition(JEWEL_ARM_UP);
-        // set the digital channel to input.
-       // liftLower.setMode(DigitalChannel.Mode.INPUT);
 
-//        upMotor.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
         waitForStart();
         runtime.reset();
 
